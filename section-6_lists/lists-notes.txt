@@ -14,3 +14,46 @@
 
 # >>> myList = [1, 2, 3, 4]
 # >>> 1 in myList
+
+######### SWAPPING VALUES #########
+
+a = "AAA"
+b = "BBB"
+
+a, b = b, and a #result = a = "BBB", b = "AAA"
+
+
+vector = ['cat', 'dog', 'bird']
+cat, dog, bird = vector
+
+############# INSERT ##############
+
+vector = ['cat', 'dog', 'bird']
+vector.append('chicken')
+
+# index
+vector.insert(1, 'chicken')
+
+
+############ REMOVE ################
+
+vector.remove('cat')
+del vector[1]
+
+
+vector.sort()
+vector.sort(reverse=True)
+
+
+# All the upper case comes before the lowercase ones
+# Solution
+vector.sort(key=str.lower)
+
+
+# Strings in phyton are IMUTABLE
+
+
+# COPYING LISTS
+
+newList = copy().deepcopy(list)
+
